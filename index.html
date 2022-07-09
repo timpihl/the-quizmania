@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+    <title>The Quizmania</title>
+</head>
+
+<body id="body">
+
+    <div id="title" class="title">The Quizmania</div>
+    <div id="subtitle" class="subtitle">Enter your name:</div>
+
+    <form id="userform" class="userform">
+        <label for="name">Name</label>
+        <input autofocus class="userform_name" type="text" id="name" name="name">
+        <input class="userform_submit" type="submit" value="Submit">
+    </form>
+
+    <div id="score" class="score">
+        <span id="scoretitle" class="scoretitle">Score: </span>
+        <span id="scorecount" class="scorecount">0</span>
+    </div>
+
+    <div id="quiz" class="quiz"></div>
+
+    <button id="feedback_button" class="feedback_button">Feedback</button>
+
+    <div id="feedback" class="feedback">
+        <div id="feedback_content" class="feedback_content">
+            <span id="feedback_close" class="feedback_close">&times;</span>
+            <form id="feedback_form">
+                <label id="feedback_label" class="feedback_label" for="feedback_textarea">Submit feedback for The Quizmania</label>
+                <br>
+                <textarea id="feedback_textarea" class="feedback_textarea" name="feedback_textarea"></textarea>
+                <br>
+                <input class="feedback_submit" type="submit" value="Submit">
+            </form>
+        </div>
+    </div>
+
+    <script src="assets/js/script.js"></script>
+
+</body>
+
+</html>
